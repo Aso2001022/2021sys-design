@@ -1,9 +1,9 @@
 ### 画面詳細図
 ## トップページ
 ### プロトタイプは以下のリンク先
-[プロトタイプ](https://www.figma.com/file/L8OvFbHtp1rBlo4m49IPWs/Untitled?node-id=1%3A2)
+[プロトタイプ](https://www.figma.com/file/Je6h3o28byGOQEGjNL3Gbv/Untitled?node-id=0%3A1)
 *****
-<img src="../img/toppage.png" width="500">
+<img src="../img/top1.png" width="500">
 
 *****
 補足：対応DBの列はDB設計後、〇を対応するテーブル・カラム名に差し替えること。
