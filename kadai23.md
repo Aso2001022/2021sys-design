@@ -29,7 +29,7 @@ entity "顧客マスタ" <m_customers><<M,DDAA00>>{
   num
   }
   
-  entity "商品マスタ"<<M,DDAA00>> {
+  entity "商品マスタ"<m_items><<M,DDAA00>> {
   +items_code[PK]
   --
   item_name
