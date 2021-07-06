@@ -1,7 +1,6 @@
 ```puml
 @startuml
-entity "顧客マスタ"as customer<m_customers>
-<<M>>{
+entity "顧客マスタ" <<M,DDAA00>>{
   +customer_code[PK]
   --
   pass
