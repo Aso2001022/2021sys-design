@@ -1,5 +1,5 @@
 @startuml
-entity "顧客マスタ" {
+entity0 "顧客マスタ" {
   +customer_code[PK]
   --
   pass
@@ -11,7 +11,7 @@ entity "顧客マスタ" {
   reg_date
   }
   
-  entity "購入テーブル" {
+  entity1 "購入テーブル" {
   +order_id[PK]
   --
   # customer_code[FK]
@@ -21,7 +21,6 @@ entity "顧客マスタ" {
   
   entity "購入詳細テーブル" {
   +order_id[PK]
-  --
   +detail_id[PK]
   --
   # item_code[FK]
