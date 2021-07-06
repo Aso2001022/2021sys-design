@@ -53,9 +53,9 @@ name
 reg_date
 }
 
-customers|〇..〇{purchase
-purchase||..|{purchase_date
-purchase_date{--||items
-items〇{--||category
+顧客マスタ|〇..〇{購入テーブル
+購入テーブル||..|{購入詳細テーブル
+購入詳細テーブル{--||items
+商品マスタ〇{--||カテゴリマスタ
 @enduml
 
