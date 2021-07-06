@@ -41,7 +41,7 @@ entity "顧客マスタ" <m_customers><<M,DDAA00>>{
   reg_date
   }
   
-  entity "カテゴリマスタ" <m_category><<M,DDAA00>> {
+  entity "カテゴリマスタ" <<M,DDAA00>> {
 +category_id[PK]
 --
 name
