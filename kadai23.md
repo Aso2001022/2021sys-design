@@ -1,6 +1,5 @@
 @startuml
-entity "顧客マスタ" as customer <m_customers>
-<<M,MASTER_MARK_COLOR>>{
+entity "顧客マスタ" {
   +customer_code[PK]
   --
   pass
@@ -12,8 +11,7 @@ entity "顧客マスタ" as customer <m_customers>
   reg_date
   }
   
-  entity "購入テーブル" as purchase<d_purchase>
-  <<T,>>{
+  entity "購入テーブル" {
   +order_id[PK]
   --
   # customer_code[FK]
@@ -21,8 +19,7 @@ entity "顧客マスタ" as customer <m_customers>
   total_price
   }
   
-  entity "購入詳細テーブル" as purchase_date<d_ purchase_date>
-  <<t,>>{
+  entity "購入詳細テーブル" {
   +order_id[PK]
   --
   +detail_id[PK]
@@ -32,8 +29,7 @@ entity "顧客マスタ" as customer <m_customers>
   num
   }
   
-  entity "商品マスタ" as items <m_items>
-  <<M,>>{
+  entity "商品マスタ" {
   +items_code[PK]
   --
   item_name
@@ -45,8 +41,7 @@ entity "顧客マスタ" as customer <m_customers>
   reg_date
   }
   
-  entity "カテゴリマスタ" as category <m_category>
-  <<M,>>{
+  entity "カテゴリマスタ" {
 +category_id[PK]
 --
 name
