@@ -12,7 +12,7 @@ entity "顧客マスタ" <<M,DDAA00>>{
   reg_date
   }
   
-  entity "購入テーブル" {
+  entity "購入テーブル"<<T,00AADD>>{
   +order_id[PK]
   --
   # customer_code[FK]
@@ -20,7 +20,7 @@ entity "顧客マスタ" <<M,DDAA00>>{
   total_price
   }
   
-  entity "購入詳細テーブル" {
+  entity "購入詳細テーブル" <<T,00AADD>> {
   +order_id[PK]
   +detail_id[PK]
   --
@@ -29,7 +29,7 @@ entity "顧客マスタ" <<M,DDAA00>>{
   num
   }
   
-  entity "商品マスタ" {
+  entity "商品マスタ"<<M,DDAA00>> {
   +items_code[PK]
   --
   item_name
@@ -41,7 +41,7 @@ entity "顧客マスタ" <<M,DDAA00>>{
   reg_date
   }
   
-  entity "カテゴリマスタ" {
+  entity "カテゴリマスタ" <<M,DDAA00>> {
 +category_id[PK]
 --
 name
