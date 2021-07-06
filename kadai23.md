@@ -1,3 +1,4 @@
+@startuml
 entity "顧客マスタ" as customer <m_customers>
 <<M,MASTER_MARK_COLOR>>{
   +customer_code[PK]
@@ -15,7 +16,7 @@ entity "顧客マスタ" as customer <m_customers>
   <<T,>>{
   +order_id[PK]
   --
-  customer_code[FK]
+  # customer_code[FK]
   purchase_date
   total_price
   }
@@ -26,7 +27,7 @@ entity "顧客マスタ" as customer <m_customers>
   --
   +detail_id[PK]
   --
-  item_code[FK]
+  # item_code[FK]
   price
   num
   }
@@ -37,7 +38,7 @@ entity "顧客マスタ" as customer <m_customers>
   --
   item_name
   price
-  category_id[FK]
+  # category_id[FK]
   image
   detail
   del_flag
@@ -52,12 +53,9 @@ name
 reg_date
 }
 
-``startuml
-@startuml
 customers|〇..〇{purchase
 purchase||..|{purchase_date
 purchase_date{--||items
 items〇{--||category
 @enduml
-```
 
