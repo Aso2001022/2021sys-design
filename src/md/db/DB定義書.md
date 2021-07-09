@@ -1,6 +1,6 @@
 # DB定義書
 ## ER図
-[ER図はこちら](https://github.com/Aso2001022/2021sys-design/blob/main/kadai23.md　"ER図はこちら")
+[ER図はこちら](https://github.com/Aso2001022/2021sys-design/blob/main/kadai23.md "ER図はこちら")
 # DBテーブルカラム詳細一覧
 
 ## 購入テーブル（d_purchase）
