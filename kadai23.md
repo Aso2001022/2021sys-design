@@ -1,5 +1,6 @@
 ```puml
 @startuml
+package "ECサイト" as target_system {
 entity "顧客マスタ" <m_customers><<M,DDAA00>>{
   +customer_code[PK]
   --
@@ -46,6 +47,7 @@ entity "顧客マスタ" <m_customers><<M,DDAA00>>{
 --
 name
 reg_date
+}
 }
 
 顧客マスタ |o-ri-o{ 購入テーブル 
